@@ -335,7 +335,7 @@
               <label class="block text-xs md:text-sm font-bold text-slate-300 mb-2">Paket Pilihan</label>
               <div class="relative">
                 <i class="fas fa-box absolute left-4 top-1/2 -translate-y-1/2 text-brand-500"></i>
-                <input type="text" id="selectedPackage" readonly class="w-full pl-4 md:pl-6 pr-4 py-3 md:py-4 bg-slate-800 border border-slate-700 text-brand-400 rounded-md font-bold outline-none text-sm md:text-base">
+                <input type="text" id="selectedPackage" readonly class="w-full pl-10 md:pl-12 pr-4 py-3 md:py-4 bg-slate-800 border border-slate-700 text-brand-400 rounded-md font-bold outline-none text-sm md:text-base">
               </div>
             </div>
             <button onclick="submitToWA()" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-bold py-3 md:py-4 rounded-md text-sm md:text-lg transition-all shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2 mt-4">
@@ -380,7 +380,7 @@
 
     <div class="glass-dark max-w-md w-full rounded-modern p-6 md:p-10 text-center relative z-10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-t-4 border-t-brand-500">
       
-      <!-- Logo G di Login Member (Diperbarui) -->
+      <!-- Logo G di Login Member -->
       <div class="w-20 h-20 md:w-24 md:h-24 mx-auto mb-4 md:mb-6 flex items-center justify-center bg-white rounded-2xl shadow-[0_0_15px_rgba(255,255,255,0.1)] p-3">
         <img src="https://github.com/airnetcso/gos/blob/main/LOGO_HITAM_PUTIH-removebg-preview.png?raw=true" alt="Gumi Logo" class="w-full h-full object-contain">
       </div>
@@ -390,10 +390,11 @@
       
       <div class="space-y-4 md:space-y-5">
         <div class="relative">
-         class="w-full px-4 py-3 md:py-4 bg-slate-900/80 border border-slate-700 rounded-md focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white outline-none text-center text-base md:text-lg font-bold tracking-[0.2em] transition-all placeholder:text-slate-600 placeholder:text-center placeholder:tracking-normal" 
+          <!-- Ikon Kunci Telah Dihapus, Padding Menggunakan px-4 Supaya Benar-benar Center secara Proporsional -->
+          <input type="password" id="accessCode" placeholder="KODE AKSES" class="w-full px-4 py-3 md:py-4 bg-slate-900/80 border border-slate-700 rounded-md focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white outline-none text-center text-base md:text-lg font-bold tracking-[0.2em] transition-all placeholder:text-slate-600 placeholder:tracking-normal">
         </div>
         <button onclick="checkAccess()" class="w-full py-3 md:py-4 bg-brand-600 hover:bg-brand-500 text-white rounded-md font-bold text-xs md:text-sm uppercase tracking-widest transition-all shadow-[0_10px_20px_rgba(34,197,94,0.2)] hover:-translate-y-0.5">
-          MASUK
+          MASUK APLIKASI
         </button>
       </div>
     </div>
@@ -514,7 +515,6 @@
         <!-- Mobile Header -->
         <header class="md:hidden bg-dark-900 border-b border-slate-800 p-4 flex items-center justify-between sticky top-0 z-30">
           <div class="flex items-center gap-2">
-            <!-- Added brightness-0 invert to mobile header logo as well -->
             <img src="https://github.com/airnetcso/gos/blob/main/LOGO_HITAM_PUTIH-removebg-preview.png?raw=true" alt="Gumi Logo" class="w-8 h-8 object-contain brightness-0 invert">
             <span class="font-bold text-white text-sm">Gumi <span class="text-brand-500">Space</span></span>
           </div>
@@ -895,6 +895,7 @@
       document.getElementById('indoQuote').innerText = selected.id;
     }
 
+    // Update Avatar
     function updateAvatar(e) {
       const file = e.target.files[0];
       if (file) {
