@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   
   <!-- Google Fonts: Plus Jakarta Sans -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
   
   <script>
     tailwind.config = {
@@ -102,7 +102,6 @@
     <nav class="fixed w-full top-0 z-50 bg-white shadow-md transition-all">
       <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
         <div class="flex items-center gap-2 md:gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-          <!-- Logo warna asli tanpa efek invert putih -->
           <img src="https://github.com/airnetcso/gos/blob/main/LOGO_HITAM_PUTIH-removebg-preview.png?raw=true" alt="Gumi Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain drop-shadow-sm">
           <span class="font-extrabold text-lg md:text-xl tracking-tight text-slate-900">Gumi Eohakwon</span>
         </div>
@@ -178,11 +177,9 @@
         </div>
         
         <div class="relative max-w-5xl mx-auto px-4 md:px-12">
-          
           <!-- Slider Container -->
           <div class="overflow-hidden py-4" id="testimonialSlider">
             <div class="flex transition-transform duration-500 ease-in-out" id="testimonialSlides">
-              
               <!-- Slide 1 -->
               <div class="min-w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 px-1">
                 <div class="bg-slate-900 p-6 md:p-8 rounded-modern shadow-2xl border border-slate-800 relative h-full flex flex-col">
@@ -214,7 +211,6 @@
                   </div>
                 </div>
               </div>
-
               <!-- Slide 2 -->
               <div class="min-w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 px-1">
                 <div class="bg-slate-900 p-6 md:p-8 rounded-modern shadow-2xl border border-slate-800 relative h-full flex flex-col">
@@ -246,7 +242,6 @@
                   </div>
                 </div>
               </div>
-
               <!-- Slide 3 -->
               <div class="min-w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 px-1">
                 <div class="bg-slate-900 p-6 md:p-8 rounded-modern shadow-2xl border border-slate-800 relative h-full flex flex-col">
@@ -278,7 +273,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -296,7 +290,6 @@
             <button onclick="goToTesti(1)" class="w-2 md:w-3 h-2 md:h-3 rounded-full bg-slate-700 transition-all duration-300 hover:bg-slate-500"></button>
             <button onclick="goToTesti(2)" class="w-2 md:w-3 h-2 md:h-3 rounded-full bg-slate-700 transition-all duration-300 hover:bg-slate-500"></button>
           </div>
-
         </div>
       </div>
     </section>
@@ -318,7 +311,7 @@
           <p class="text-slate-400 text-sm md:text-base">Mencari Kelas Reguler Tatap Muka (Offline) di Sukabumi? <a href="#" onclick="contactWA('offline'); return false;" class="text-brand-500 font-bold hover:underline hover:text-brand-400">Hubungi Admin via WhatsApp</a></p>
         </div>
 
-        <!-- Registration Form (Hidden by default) -->
+        <!-- Registration Form -->
         <div id="registrationFormSection" class="hidden max-w-xl mx-auto bg-slate-900 rounded-modern shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-6 md:p-10 border border-slate-800 relative overflow-hidden animate-slide-up">
           <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-400 to-teal-500"></div>
           <h2 class="text-xl md:text-2xl font-bold text-center mb-6 md:mb-8 text-white">Selesaikan Pendaftaran</h2>
@@ -378,25 +371,34 @@
     <div class="absolute top-1/4 left-1/4 w-32 h-32 md:w-64 md:h-64 bg-slate-800/40 rounded-full blur-3xl"></div>
     <div class="absolute bottom-1/4 right-1/4 w-40 h-40 md:w-80 md:h-80 bg-brand-500/10 rounded-full blur-3xl"></div>
 
-    <div class="glass-dark max-w-md w-full rounded-modern p-6 md:p-10 text-center relative z-10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-t-4 border-t-brand-500">
+    <div class="glass-dark max-w-md w-full rounded-modern p-6 md:p-10 text-center relative z-10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-t-4 border-t-brand-500 animate-slide-up">
       
-      <!-- Logo G di Login Member -->
+      <!-- Logo G -->
       <div class="w-20 h-20 md:w-24 md:h-24 mx-auto mb-4 md:mb-6 flex items-center justify-center bg-white rounded-2xl shadow-[0_0_15px_rgba(255,255,255,0.1)] p-3">
         <img src="https://github.com/airnetcso/gos/blob/main/LOGO_HITAM_PUTIH-removebg-preview.png?raw=true" alt="Gumi Logo" class="w-full h-full object-contain">
       </div>
 
       <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-2">Member Login</h1>
-      <p class="text-slate-400 text-xs md:text-sm mb-6 md:mb-10">Masuk dengan kode akses</p>
+      <p class="text-slate-400 text-xs md:text-sm mb-6 md:mb-8">Masuk dengan kode akses</p>
       
       <div class="space-y-4 md:space-y-5">
         <div class="relative">
-          <!-- Ikon Kunci Telah Dihapus, Padding Menggunakan px-4 Supaya Benar-benar Center secara Proporsional -->
           <input type="password" id="accessCode" placeholder="KODE AKSES" class="w-full px-4 py-3 md:py-4 bg-slate-900/80 border border-slate-700 rounded-md focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white outline-none text-center text-base md:text-lg font-bold tracking-[0.2em] transition-all placeholder:text-slate-600 placeholder:tracking-normal">
         </div>
         <button onclick="checkAccess()" class="w-full py-3 md:py-4 bg-brand-600 hover:bg-brand-500 text-white rounded-md font-bold text-xs md:text-sm uppercase tracking-widest transition-all shadow-[0_10px_20px_rgba(34,197,94,0.2)] hover:-translate-y-0.5">
           MASUK
         </button>
       </div>
+
+      <!-- Demo Info Helper Box -->
+      <div class="mt-6 p-3 bg-slate-900/60 border border-slate-800 rounded-lg text-left">
+        <span class="text-slate-300 font-extrabold text-xs block mb-1">💡 Info Demo Uji Coba:</span>
+        <div class="text-[11px] text-slate-400 leading-relaxed">
+          • Masukkan <code class="text-brand-400 font-mono font-bold bg-slate-800 px-1 rounded">FREE123</code> untuk mencoba <span class="font-bold text-slate-200">Akun Free</span><br>
+          • Masukkan <code class="text-yellow-400 font-mono font-bold bg-slate-800 px-1 rounded">PVT123</code> untuk mencoba <span class="font-bold text-slate-200">Akun Private</span>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -430,7 +432,8 @@
             </div>
             <div class="leading-tight overflow-hidden">
               <span id="displayUserName" class="font-bold text-white text-base md:text-lg truncate block">Member</span>
-              <span class="text-brand-400 text-[10px] font-extrabold uppercase tracking-widest bg-brand-500/10 px-2 py-0.5 rounded mt-1 inline-block">Premium</span>
+              <!-- Dynamic Membership Badge -->
+              <span id="displayUserRole" class="text-brand-400 text-[10px] font-extrabold uppercase tracking-widest bg-brand-500/10 px-2 py-0.5 rounded mt-1 inline-block">Premium</span>
             </div>
           </div>
           <p class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest mb-3 px-2">Menu Utama</p>
@@ -447,52 +450,92 @@
           <div class="py-2"><div class="h-px bg-slate-800"></div></div>
           <p class="text-[9px] md:text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 px-2 mt-2">Materi Video</p>
 
-          <button onclick="showClassSection('dasar')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group">
-            <i class="fas fa-play-circle text-brand-500 w-5 text-center"></i> Kelas Dasar
+          <!-- MENU: Kelas Dasar (Selalu Terbuka) -->
+          <button onclick="showClassSection('dasar')" class="w-full flex items-center justify-between px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
+            <span class="flex items-center gap-3">
+              <i class="fas fa-play-circle text-brand-500 w-5 text-center"></i> Kelas Dasar
+            </span>
           </button>
-          <button onclick="showClassSection('menengah')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group">
-            <i class="fas fa-play-circle text-orange-400 w-5 text-center"></i> Kelas Menengah
+
+          <!-- MENU: Kelas Menengah (Hanya Private) -->
+          <button onclick="handleMenuAccess('menengah', () => showClassSection('menengah'))" id="btn-menengah" class="w-full flex items-center justify-between px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
+            <span class="flex items-center gap-3">
+              <i class="fas fa-play-circle text-orange-400 w-5 text-center"></i> Kelas Menengah
+            </span>
+            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
-          <button onclick="showClassSection('lanjutan')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group">
-            <i class="fas fa-play-circle text-blue-400 w-5 text-center"></i> Kelas Lanjutan
+
+          <!-- MENU: Kelas Lanjutan (Hanya Private) -->
+          <button onclick="handleMenuAccess('lanjutan', () => showClassSection('lanjutan'))" id="btn-lanjutan" class="w-full flex items-center justify-between px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
+            <span class="flex items-center gap-3">
+              <i class="fas fa-play-circle text-blue-400 w-5 text-center"></i> Kelas Lanjutan
+            </span>
+            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
           
           <div class="py-2"><div class="h-px bg-slate-800"></div></div>
           <p class="text-[9px] md:text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 px-2 mt-2">Pembahasan Khusus</p>
 
-          <button onclick="showModuleSection('textbook')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
-            <i class="fas fa-book-open text-purple-400 w-5 text-center"></i> Textbook EPS TOPIK 
+          <!-- MENU: Textbook (Hanya Private) -->
+          <button onclick="handleMenuAccess('textbook', () => showModuleSection('textbook'))" id="btn-textbook" class="w-full flex items-center justify-between px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
+            <span class="flex items-center gap-3">
+              <i class="fas fa-book-open text-purple-400 w-5 text-center"></i> Textbook EPS TOPIK 
+            </span>
+            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
-          <button onclick="showModuleSection('tryout')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
-            <i class="fas fa-video text-pink-400 w-5 text-center"></i> Tryout EPS TOPIK
+
+          <!-- MENU: Tryout Video (Hanya Private) -->
+          <button onclick="handleMenuAccess('tryout', () => showModuleSection('tryout'))" id="btn-tryout" class="w-full flex items-center justify-between px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
+            <span class="flex items-center gap-3">
+              <i class="fas fa-video text-pink-400 w-5 text-center"></i> Tryout EPS TOPIK
+            </span>
+            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
 
           <div class="py-2"><div class="h-px bg-slate-800"></div></div>
           <p class="text-[9px] md:text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 px-2 mt-2">Aplikasi Pendukung</p>
 
-          <button onclick="showModuleSection('aplikasi')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
-            <i class="fas fa-laptop-code text-pink-400 w-5 text-center"></i> Aplikasi Latihan & TO
+          <!-- MENU: Aplikasi Latihan & TO (Hanya Private) -->
+          <button onclick="handleMenuAccess('aplikasi', () => showModuleSection('aplikasi'))" id="btn-aplikasi" class="w-full flex items-center justify-between px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
+            <span class="flex items-center gap-3">
+              <i class="fas fa-laptop-code text-pink-400 w-5 text-center"></i> Aplikasi Latihan & TO
+            </span>
+            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
 
           <div class="py-2"><div class="h-px bg-slate-800"></div></div>
           <p class="text-[9px] md:text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 px-2 mt-2">File & Audio</p>
 
-          <button onclick="showModuleSection('materi')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group">
+          <!-- MENU: Module Materi (Selalu Terbuka) -->
+          <button onclick="showModuleSection('materi')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
             <i class="fas fa-file-pdf text-rose-500 w-5 text-center"></i> Module Materi
           </button>
-          <button onclick="showModuleSection('pelengkap')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group">
+
+          <!-- MENU: Modul Pelengkap (Selalu Terbuka) -->
+          <button onclick="showModuleSection('pelengkap')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
             <i class="fas fa-file-medical text-emerald-400 w-5 text-center"></i> Modul Pelengkap
           </button>
-          <button onclick="showModuleSection('listening')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group">
-            <i class="fas fa-headphones text-sky-400 w-5 text-center"></i> Module Listening
+
+          <!-- MENU: Module Listening (Hanya Private) -->
+          <button onclick="handleMenuAccess('listening', () => showModuleSection('listening'))" id="btn-listening" class="w-full flex items-center justify-between px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
+            <span class="flex items-center gap-3">
+              <i class="fas fa-headphones text-sky-400 w-5 text-center"></i> Module Listening
+            </span>
+            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
-          <button onclick="showModuleSection('soal')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group">
-            <i class="fas fa-file-video text-teal-400 w-5 text-center"></i> Module Soal Tryout
+
+          <!-- MENU: Module Soal Tryout (Hanya Private) -->
+          <button onclick="handleMenuAccess('soal', () => showModuleSection('soal'))" id="btn-soal" class="w-full flex items-center justify-between px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
+            <span class="flex items-center gap-3">
+              <i class="fas fa-file-video text-teal-400 w-5 text-center"></i> Module Soal Tryout
+            </span>
+            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
 
           <div class="py-2"><div class="h-px bg-slate-800"></div></div>
           <p class="text-[9px] md:text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2 px-2 mt-2">Pusat Bantuan</p>
 
+          <!-- PUSAT BANTUAN: Semua item selalu terbuka -->
           <button onclick="contactWA('konsultasi')" class="w-full flex items-center gap-3 px-3 md:px-4 py-2 md:py-2.5 rounded-md text-slate-400 hover:bg-slate-800 hover:text-white transition-colors text-xs md:text-sm font-medium group text-left">
             <i class="fab fa-whatsapp text-brand-500 w-5 text-center"></i> Konsultasi Admin
           </button>
@@ -543,6 +586,18 @@
                 <button onclick="getRandomQuote()" class="absolute bottom-3 right-3 md:bottom-4 md:right-4 text-slate-500 hover:text-brand-400 transition-colors p-2"><i class="fas fa-sync-alt"></i></button>
               </div>
             </div>
+
+            <!-- Promotion banner for Free Users -->
+            <div id="banner-upgrade-free" class="mt-8 bg-slate-900 border border-amber-500/30 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-4 hidden">
+              <div>
+                <span class="text-[10px] font-extrabold text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded tracking-widest uppercase mb-1.5 inline-block"><i class="fas fa-crown"></i> Akun Free Aktif</span>
+                <h3 class="text-white text-lg font-bold mb-1">Mulai Belajar Kelas Menengah, Lanjutan & Tryout</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Nikmati akses tak terbatas ke seluruh materi textbook pembahasan, ratusan soal latihan eksklusif dan audio listening EPS TOPIK.</p>
+              </div>
+              <button onclick="contactWA('upgrade')" class="whitespace-nowrap shrink-0 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 font-bold px-6 py-3 rounded-xl transition-all shadow-lg hover:-translate-y-0.5">
+                <i class="fas fa-crown mr-2"></i> Upgrade ke Private
+              </button>
+            </div>
           </div>
 
           <!-- State 2: List View (Videos / Docs / Apps) -->
@@ -557,7 +612,7 @@
             </div>
           </div>
 
-          <!-- State 3: Video Player with Direct Play Support -->
+          <!-- State 3: Video Player -->
           <div id="content-video" class="hidden animate-slide-up">
             <div class="flex flex-row justify-between items-center gap-2 mb-4 md:mb-6">
               <button onclick="closeVideo()" class="text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-700 px-3 py-1.5 md:px-4 md:py-2 rounded-md flex items-center gap-2 font-medium text-xs md:text-sm transition-all border border-slate-700">
@@ -565,7 +620,6 @@
               </button>
               
               <div class="flex items-center gap-2">
-                <!-- Fallback Button for Blocked Embeds -->
                 <a id="btnTontonLangsung" href="#" target="_blank" class="text-xs md:text-sm font-bold bg-rose-600 hover:bg-rose-500 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-md flex items-center gap-2 transition-all shadow-md shadow-rose-600/20">
                   <i class="fab fa-youtube text-white text-sm"></i>
                   <span>Tonton Langsung</span>
@@ -593,6 +647,55 @@
       </main>
     </div>
   </div>
+
+
+  <!-- ========================================== -->
+  <!-- MODAL: UPGRADE PREMIUM/PRIVATE -->
+  <!-- ========================================== -->
+  <div id="upgradeModal" class="fixed inset-0 z-[10000] flex items-center justify-center p-4 bg-dark-950/80 backdrop-blur-md hidden transition-all duration-300">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-lg w-full overflow-hidden shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] transform scale-95 opacity-0 transition-all duration-300" id="upgradeModalCard">
+      <!-- Top banner image or pattern -->
+      <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-6 text-center relative">
+        <button onclick="closeUpgradeModal()" class="absolute top-4 right-4 text-slate-950 hover:text-white transition-colors bg-white/20 hover:bg-white/30 rounded-full w-8 h-8 flex items-center justify-center">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="w-16 h-16 bg-slate-950/20 rounded-full flex items-center justify-center mx-auto mb-3">
+          <i class="fas fa-crown text-3xl text-white"></i>
+        </div>
+        <h3 class="text-xl font-extrabold text-slate-950">Akses Terkunci 🔒</h3>
+        <p class="text-slate-900 text-xs font-semibold mt-1">Hanya Tersedia untuk Anggota Akun Private</p>
+      </div>
+
+      <div class="p-6 md:p-8 space-y-6">
+        <p class="text-slate-300 text-sm leading-relaxed text-center">
+          Maaf, menu atau materi ini sedang dikunci karena Anda menggunakan <strong class="text-slate-100 bg-slate-800 px-1.5 py-0.5 rounded">Akun Free</strong>. Dapatkan akses tak terbatas ke seluruh sistem dengan melakukan peningkatan kelas.
+        </p>
+
+        <!-- Premium Perks List -->
+        <div class="space-y-3 bg-slate-950/50 p-4 rounded-2xl border border-slate-800">
+          <span class="text-xs font-bold text-amber-500 uppercase tracking-wider block mb-1">Keuntungan Akun Private:</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
+            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Kelas Menengah & Lanjutan</div>
+            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Buku Pembahasan Textbook</div>
+            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Full Audio Listening</div>
+            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Puluhan Soal Tryout</div>
+            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Aplikasi Latihan Web</div>
+            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Sertifikat Penyelesaian</div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <button onclick="closeUpgradeModal()" class="w-full sm:w-1/3 py-3 rounded-xl border border-slate-700 hover:border-slate-500 text-xs font-bold text-slate-400 hover:text-white transition-colors">
+            Nanti Saja
+          </button>
+          <button onclick="contactWA('upgrade'); closeUpgradeModal();" class="w-full sm:w-2/3 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 font-extrabold text-xs rounded-xl transition-all shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-sm"></i> HUBUNGI ADMIN VIA WA
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- ========================================== -->
   <!-- JAVASCRIPT LOGIC -->
@@ -735,29 +838,35 @@
       }
     }
 
-    // --- MEMBER AREA DATA ---
+    // --- MEMBERSHIP DATABASE (FREE & PRIVATE) ---
     const accessDatabase = {
-      "UUS2000": { name: "Uus", owned: ["Dasar"] },
-      "AMIRA22": { name: "Amira", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "ODANG21": { name: "Odang", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "JABIR2000": { name: "Uus", owned: ["Dasar"] },
-      "OLAN22": { name: "Amira", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "DAHONG21": { name: "Odang", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "ROBEN2000": { name: "Uus", owned: ["Dasar"] },
-      "AJUMA22": { name: "Amira", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "BOSUN21": { name: "Odang", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "ROKEK2000": { name: "Uus", owned: ["Dasar"] },
-      "ADLAMA22": { name: "Amira", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "NINING21": { name: "Odang", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "ADMIN": { name: "Administrator", owned: ["Dasar", "Menengah", "Lanjutan"] }
+      // --- TEST USERS ---
+      "FREE123": { name: "Budi (Uji Coba Free)", role: "free", owned: ["Dasar"] },
+      "PVT123": { name: "Andi (Uji Coba Private)", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
+
+      // --- LEGACY DATABASES MAPS TO CATEGORIES ---
+      "UUS2000": { name: "Uus", role: "free", owned: ["Dasar"] },
+      "JABIR2000": { name: "Jabir", role: "free", owned: ["Dasar"] },
+      "ROBEN2000": { name: "Roben", role: "free", owned: ["Dasar"] },
+      "ROKEK2000": { name: "Rokek", role: "free", owned: ["Dasar"] },
+      
+      "AMIRA22": { name: "Amira", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
+      "ODANG21": { name: "Odang", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
+      "OLAN22": { name: "Olan", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
+      "DAHONG21": { name: "Dahong", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
+      "AJUMA22": { name: "Ajuma", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
+      "BOSUN21": { name: "Bosun", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
+      "ADLAMA22": { name: "Adlama", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
+      "NINING21": { name: "Nining", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
+      "ADMIN": { name: "Administrator", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] }
     };
 
     const quotes = [
       { ko: "오늘 걷지 않으면 내일 뛰어야 한다.", id: '"Jika kamu tidak berjalan hari ini, kamu harus berlari besok."' },
       { ko: "실패는 성공의 어머니이다.", id: '"Kegagalan adalah ibu dari kesuksesan."' },
-      { ko: "멈추지 말고 계속 해나가기만 한다면 늦어도 상관없다.", id: '"Tidak masalah seberapa lambat kamu berjalan selama kamu tidak berhenti."' },
+      { ko: "멈추지 말고 계속 해나가기만 한다면 늦어도 상관없da.", id: '"Tidak masalah seberapa lambat kamu berjalan selama kamu tidak berhenti."' },
       { ko: "행복은 이미 완성된 것이 아니라, 당신의 행동으로부터 오는 것이다.", id: '"Kegagalan adalah pengingat untuk terus berjuang."' },
-      { ko: "별은 어둠이 없이는 빛나지 못해.", id: '"Bintang tidak bisa bersinar tanpa kegelapan."' }
+      { ko: "별은 어둠이 없이는 빛na지 못해.", id: '"Bintang tidak bisa bersinar tanpa kegelapan."' }
     ];
 
     const sampleVid = "https://drive.google.com/file/d/1KspUnWD-wzu4L9LiCMYf7--ksIvMPwl9/preview";
@@ -922,6 +1031,78 @@
       }
     }
 
+    // --- ENFORCE INTERACTION LOCKS ---
+    function handleMenuAccess(menuKey, callback) {
+      if (!currentUser) return;
+      
+      // Allowed menus for FREE account
+      const allowedForFree = ['home', 'dasar', 'materi', 'pelengkap', 'konsultasi', 'upgrade', 'gtog', 'logout'];
+      
+      if (currentUser.role === 'private' || allowedForFree.includes(menuKey)) {
+        callback();
+      } else {
+        openUpgradeModal();
+      }
+    }
+
+    function openUpgradeModal() {
+      const modal = document.getElementById('upgradeModal');
+      const card = document.getElementById('upgradeModalCard');
+      
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        card.classList.remove('scale-95', 'opacity-0');
+        card.classList.add('scale-100', 'opacity-100');
+      }, 50);
+    }
+
+    function closeUpgradeModal() {
+      const modal = document.getElementById('upgradeModal');
+      const card = document.getElementById('upgradeModalCard');
+      
+      card.classList.remove('scale-100', 'opacity-100');
+      card.classList.add('scale-95', 'opacity-0');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+
+    // Dynamic UI styling adjustments based on User Role (Free or Private)
+    function applySidebarRoleStyle() {
+      const isFree = currentUser && currentUser.role === 'free';
+      const roleBadge = document.getElementById('displayUserRole');
+      const freeBanner = document.getElementById('banner-upgrade-free');
+
+      // Update badge visual
+      if (isFree) {
+        roleBadge.innerText = 'FREE MEMBER';
+        roleBadge.className = 'text-slate-400 text-[10px] font-extrabold uppercase tracking-widest bg-slate-800 px-2 py-0.5 rounded mt-1 inline-block border border-slate-700';
+        if (freeBanner) freeBanner.classList.remove('hidden');
+      } else {
+        roleBadge.innerHTML = '<i class="fas fa-crown text-amber-400 mr-1"></i> PRIVATE';
+        roleBadge.className = 'text-amber-400 text-[10px] font-extrabold uppercase tracking-widest bg-amber-500/10 px-2 py-0.5 rounded mt-1 inline-block border border-amber-500/20';
+        if (freeBanner) freeBanner.classList.add('hidden');
+      }
+
+      // Toggle lock indicators & opacities in Sidebar
+      const lockList = ['menengah', 'lanjutan', 'textbook', 'tryout', 'aplikasi', 'listening', 'soal'];
+      lockList.forEach(key => {
+        const btn = document.getElementById(`btn-${key}`);
+        if (btn) {
+          const lockIndicator = btn.querySelector('.lock-indicator');
+          if (isFree) {
+            // style as locked
+            if (lockIndicator) lockIndicator.classList.remove('hidden');
+            btn.classList.add('opacity-60');
+          } else {
+            // style as unlocked
+            if (lockIndicator) lockIndicator.classList.add('hidden');
+            btn.classList.remove('opacity-60');
+          }
+        }
+      });
+    }
+
     function checkAccess() {
       const code = document.getElementById('accessCode').value.trim().toUpperCase();
       const user = accessDatabase[code];
@@ -933,28 +1114,36 @@
         
         document.getElementById('accessCode').value = '';
         navigateTo('view-dashboard');
+        applySidebarRoleStyle();
         showDashboard();
         showNotification(`Selamat datang kembali, ${user.name}!`, "success");
       } else {
         const input = document.getElementById('accessCode');
         input.classList.add('border-rose-500', 'ring-rose-500');
-        showNotification("Kode akses tidak valid. Hubungi Admin.", "error");
+        showNotification("Kode akses tidak valid. Silakan coba FREE123 atau PVT123.", "error");
         setTimeout(() => input.classList.remove('border-rose-500', 'ring-rose-500'), 1000);
       }
     }
 
     function contactWA(type) {
-      const msg = type === 'upgrade' ? "Halo Admin, saya ingin upgrade paket premium." : type === 'offline' ? "Halo Admin, saya ingin menanyakan informasi tentang Kelas Reguler Offline." : "Halo Admin, saya ingin berkonsultasi.";
+      const msg = type === 'upgrade' ? "Halo Admin, saya ingin upgrade paket dari akun Free ke akun Private." : type === 'offline' ? "Halo Admin, saya ingin menanyakan informasi tentang Kelas Reguler Offline." : "Halo Admin, saya ingin berkonsultasi.";
       window.open(`https://wa.me/628385551800?text=${encodeURIComponent(msg)}`, '_blank');
     }
 
+    // --- SECTION RENDERING ---
     function showClassSection(type) {
       closeSidebarOnMobile();
       resetView();
       currentCategory = type;
       const data = classData[type];
-      const hasAccess = type === 'dasar' || (currentUser && currentUser.owned.includes(type.charAt(0).toUpperCase() + type.slice(1)));
       
+      // Security enforcement (if they manipulate JS execution)
+      const allowedForFree = ['dasar'];
+      if (currentUser.role === 'free' && !allowedForFree.includes(type)) {
+        openUpgradeModal();
+        return;
+      }
+
       document.getElementById('list-icon-wrap').innerHTML = `<i class="${data.icon}"></i>`;
       document.getElementById('list-title').innerText = data.title;
       
@@ -963,17 +1152,14 @@
         const key = `vid_${type}_${index}`;
         const isWatched = watchedItems.includes(key);
         html += `
-          <div class="member-row p-3 md:p-4 flex items-center justify-between cursor-pointer ${isWatched ? 'watched-item' : ''}" onclick="${hasAccess ? `smartViewer('${item.url}', '${key}', 'video')` : 'showNotification(\'Akses dikunci. Silakan hubungi admin untuk peningkatan kelas\', \'error\')'}">
+          <div class="member-row p-3 md:p-4 flex items-center justify-between cursor-pointer ${isWatched ? 'watched-item' : ''}" onclick="smartViewer('${item.url}', '${key}', 'video')">
             <div class="flex items-center gap-3 md:gap-4 truncate mr-2">
-              <div class="w-8 h-8 md:w-10 md:h-10 shrink-0 rounded-full ${hasAccess ? 'bg-slate-800 text-brand-400 border border-slate-700' : 'bg-slate-800/50 text-slate-500 border border-slate-700'} flex items-center justify-center">
-                <i class="fas ${hasAccess ? (isWatched ? 'fa-check-circle' : 'fa-play') : 'fa-lock'} text-xs md:text-sm"></i>
+              <div class="w-8 h-8 md:w-10 md:h-10 shrink-0 rounded-full bg-slate-800 text-brand-400 border border-slate-700 flex items-center justify-center">
+                <i class="fas ${isWatched ? 'fa-check-circle' : 'fa-play'} text-xs md:text-sm"></i>
               </div>
               <span class="font-semibold title-text text-xs md:text-sm text-slate-200 truncate">${item.name}</span>
             </div>
-            ${hasAccess 
-              ? `<span class="shrink-0 text-[9px] md:text-[10px] font-bold px-2 py-1 md:px-3 md:py-1 rounded-md ${isWatched ? 'bg-slate-800 text-slate-400' : 'bg-brand-500/10 text-brand-400 border border-brand-500/20'} uppercase tracking-wider">${isWatched ? 'Selesai' : 'Buka'}</span>`
-              : `<span class="shrink-0 text-[9px] md:text-[10px] font-bold px-2 py-1 md:px-3 md:py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-500 uppercase tracking-wider">Terkunci</span>`
-            }
+            <span class="shrink-0 text-[9px] md:text-[10px] font-bold px-2 py-1 md:px-3 md:py-1 rounded-md ${isWatched ? 'bg-slate-800 text-slate-400' : 'bg-brand-500/10 text-brand-400 border border-brand-500/20'} uppercase tracking-wider">${isWatched ? 'Selesai' : 'Buka'}</span>
           </div>`;
       });
       document.getElementById('list-items').innerHTML = html;
@@ -985,6 +1171,13 @@
       resetView();
       currentCategory = type;
       const data = moduleData[type];
+
+      // Security enforcement (if they manipulate JS execution)
+      const allowedForFree = ['materi', 'pelengkap'];
+      if (currentUser.role === 'free' && !allowedForFree.includes(type)) {
+        openUpgradeModal();
+        return;
+      }
       
       document.getElementById('list-icon-wrap').innerHTML = `<i class="${data.icon}"></i>`;
       document.getElementById('list-title').innerText = data.title;
@@ -1066,7 +1259,6 @@
           return;
       }
 
-      // Automatically convert standard links to bypass "Refused to Connect" inside sandboxes
       let embedUrl = url;
       
       if (embedUrl.includes('youtube.com/watch')) {
@@ -1096,7 +1288,6 @@
           embedUrl = embedUrl.split('/view')[0] + '/preview';
       }
 
-      // Configure Fallback Button for Safe Watch Directly
       const directButton = document.getElementById('btnTontonLangsung');
       if (directButton) {
           directButton.href = url;
@@ -1126,7 +1317,6 @@
       toggleSections('dashboard');
     }
 
-    // Reset iframe to save memory/data
     function resetView() { document.getElementById('videoPlayer').src = ""; }
 
     function toggleSections(show) {
@@ -1179,7 +1369,6 @@
       resetTestiInterval();
     }
 
-    // Jump to specific slide
     function goToTesti(index) {
       currentTestiSlide = index;
       updateTestiSlider();
