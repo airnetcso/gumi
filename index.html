@@ -35,7 +35,6 @@
   </script>
 
   <style>
-    /* Global Styles */
     body { background-color: #020617; color: #f8fafc; overflow-x: hidden; }
     
     /* Custom Scrollbar */
@@ -390,15 +389,6 @@
         </button>
       </div>
 
-      <!-- Demo Info Helper Box -->
-      <div class="mt-6 p-3 bg-slate-900/60 border border-slate-800 rounded-lg text-left">
-        <span class="text-slate-300 font-extrabold text-xs block mb-1">💡 Info Demo Uji Coba:</span>
-        <div class="text-[11px] text-slate-400 leading-relaxed">
-          • Masukkan <code class="text-brand-400 font-mono font-bold bg-slate-800 px-1 rounded">FREE123</code> untuk mencoba <span class="font-bold text-slate-200">Akun Free</span><br>
-          • Masukkan <code class="text-yellow-400 font-mono font-bold bg-slate-800 px-1 rounded">PVT123</code> untuk mencoba <span class="font-bold text-slate-200">Akun Private</span>
-        </div>
-      </div>
-
     </div>
   </div>
 
@@ -462,7 +452,6 @@
             <span class="flex items-center gap-3">
               <i class="fas fa-play-circle text-orange-400 w-5 text-center"></i> Kelas Menengah
             </span>
-            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
 
           <!-- MENU: Kelas Lanjutan (Hanya Private) -->
@@ -470,7 +459,6 @@
             <span class="flex items-center gap-3">
               <i class="fas fa-play-circle text-blue-400 w-5 text-center"></i> Kelas Lanjutan
             </span>
-            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
           
           <div class="py-2"><div class="h-px bg-slate-800"></div></div>
@@ -481,7 +469,6 @@
             <span class="flex items-center gap-3">
               <i class="fas fa-book-open text-purple-400 w-5 text-center"></i> Textbook EPS TOPIK 
             </span>
-            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
 
           <!-- MENU: Tryout Video (Hanya Private) -->
@@ -489,7 +476,6 @@
             <span class="flex items-center gap-3">
               <i class="fas fa-video text-pink-400 w-5 text-center"></i> Tryout EPS TOPIK
             </span>
-            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
 
           <div class="py-2"><div class="h-px bg-slate-800"></div></div>
@@ -500,7 +486,6 @@
             <span class="flex items-center gap-3">
               <i class="fas fa-laptop-code text-pink-400 w-5 text-center"></i> Aplikasi Latihan & TO
             </span>
-            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
 
           <div class="py-2"><div class="h-px bg-slate-800"></div></div>
@@ -521,7 +506,6 @@
             <span class="flex items-center gap-3">
               <i class="fas fa-headphones text-sky-400 w-5 text-center"></i> Module Listening
             </span>
-            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
 
           <!-- MENU: Module Soal Tryout (Hanya Private) -->
@@ -529,7 +513,6 @@
             <span class="flex items-center gap-3">
               <i class="fas fa-file-video text-teal-400 w-5 text-center"></i> Module Soal Tryout
             </span>
-            <span class="lock-indicator text-[9px] bg-slate-900 text-amber-500/90 px-1.5 py-0.5 rounded font-extrabold border border-amber-500/20 hidden"><i class="fas fa-lock"></i> LOCK</span>
           </button>
 
           <div class="py-2"><div class="h-px bg-slate-800"></div></div>
@@ -650,63 +633,63 @@
 
 
   <!-- ========================================== -->
-  <!-- MODAL: UPGRADE PREMIUM/PRIVATE -->
-  <!-- ========================================== -->
-  <div id="upgradeModal" class="fixed inset-0 z-[10000] flex items-center justify-center p-4 bg-dark-950/80 backdrop-blur-md hidden transition-all duration-300">
-    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-lg w-full overflow-hidden shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] transform scale-95 opacity-0 transition-all duration-300" id="upgradeModalCard">
-      <!-- Top banner image or pattern -->
-      <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-6 text-center relative">
-        <button onclick="closeUpgradeModal()" class="absolute top-4 right-4 text-slate-950 hover:text-white transition-colors bg-white/20 hover:bg-white/30 rounded-full w-8 h-8 flex items-center justify-center">
-          <i class="fas fa-times"></i>
-        </button>
-        <div class="w-16 h-16 bg-slate-950/20 rounded-full flex items-center justify-center mx-auto mb-3">
-          <i class="fas fa-crown text-3xl text-white"></i>
-        </div>
-        <h3 class="text-xl font-extrabold text-slate-950">Akses Terkunci 🔒</h3>
-        <p class="text-slate-900 text-xs font-semibold mt-1">Hanya Tersedia untuk Anggota Akun Private</p>
-      </div>
-
-      <div class="p-6 md:p-8 space-y-6">
-        <p class="text-slate-300 text-sm leading-relaxed text-center">
-          Maaf, menu atau materi ini sedang dikunci karena Anda menggunakan <strong class="text-slate-100 bg-slate-800 px-1.5 py-0.5 rounded">Akun Free</strong>. Dapatkan akses tak terbatas ke seluruh sistem dengan melakukan peningkatan kelas.
-        </p>
-
-        <!-- Premium Perks List -->
-        <div class="space-y-3 bg-slate-950/50 p-4 rounded-2xl border border-slate-800">
-          <span class="text-xs font-bold text-amber-500 uppercase tracking-wider block mb-1">Keuntungan Akun Private:</span>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
-            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Kelas Menengah & Lanjutan</div>
-            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Buku Pembahasan Textbook</div>
-            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Full Audio Listening</div>
-            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Puluhan Soal Tryout</div>
-            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Aplikasi Latihan Web</div>
-            <div class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Sertifikat Penyelesaian</div>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row gap-3">
-          <button onclick="closeUpgradeModal()" class="w-full sm:w-1/3 py-3 rounded-xl border border-slate-700 hover:border-slate-500 text-xs font-bold text-slate-400 hover:text-white transition-colors">
-            Nanti Saja
-          </button>
-          <button onclick="contactWA('upgrade'); closeUpgradeModal();" class="w-full sm:w-2/3 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 font-extrabold text-xs rounded-xl transition-all shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2">
-            <i class="fab fa-whatsapp text-sm"></i> HUBUNGI ADMIN VIA WA
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- ========================================== -->
   <!-- JAVASCRIPT LOGIC -->
   <!-- ========================================== -->
   <script>
-    // --- STATE MANAGEMENT ---
     let currentUser = null;
     let currentCategory = null;
     let watchedItems = JSON.parse(localStorage.getItem('gumi_history_v2')) || [];
     
-    // --- CUSTOM TOAST NOTIFICATION ---
+    // =================================================================
+    // 1. PENGATURAN KATEGORI AKUN (DATABASE MEMBER)
+    // =================================================================
+    
+    // MASUKKAN ID / KODE AKSES MEMBER PRIVATE DI SINI:
+    const PRIVATE_KEYS = [
+      "ADMIN", 
+      "UUS2000", 
+      "AWEWE21", 
+      "AMIRA22", 
+      "ODANG21", 
+      "OLAN22", 
+      "DAHONG21", 
+      "AJUMA22", 
+      "BOSUN21", 
+      "ADLAMA22", 
+      "NINING21"
+    ];
+
+    // MASUKKAN ID / KODE AKSES MEMBER FREE DI SINI:
+    const FREE_KEYS = [
+      "UUSFREE", 
+      "AW0000", 
+      "JABIR2000", 
+      "ROBEN2000", 
+      "ROKEK2000"
+    ];
+
+    // DAFTAR NAMA TAMPILAN PENGGUNA BERDASARKAN ID KODE AKSES:
+    const USER_NAMES = {
+      "ADMIN": "Administrator Gumi",
+      "UUS2000": "Uus Premium",
+      "AWEWE21": "Awewe",
+      "AMIRA22": "Amira",
+      "ODANG21": "Odang",
+      "OLAN22": "Olan",
+      "DAHONG21": "Dahong",
+      "AJUMA22": "Ajuma",
+      "BOSUN21": "Bosun",
+      "ADLAMA22": "Adlama",
+      "NINING21": "Nining",
+      "UUSFREE": "Uus Free",
+      "AW0000": "AW Member",
+      "JABIR2000": "Jabir",
+      "ROBEN2000": "Roben",
+      "ROKEK2000": "Rokek"
+    };
+
+    // =================================================================
+
     function showNotification(message, type = 'info') {
       const container = document.getElementById('toast-container');
       if (!container) return;
@@ -730,19 +713,16 @@
       
       container.appendChild(toast);
       
-      // Trigger animation
       setTimeout(() => {
         toast.classList.remove('translate-x-12', 'opacity-0');
       }, 10);
       
-      // Auto dismiss after 4 seconds
       setTimeout(() => {
         toast.classList.add('translate-x-12', 'opacity-0');
         setTimeout(() => toast.remove(), 300);
       }, 4000);
     }
 
-    // Simple Router
     function navigateTo(viewId) {
       document.querySelectorAll('.view-section').forEach(el => {
         el.classList.remove('active');
@@ -760,7 +740,6 @@
       }, 300);
     }
 
-    // --- LANDING PAGE DATA & LOGIC ---
     const packages = [
       { name: "Kelas Tutorial Dasar", price: "Rp 149.000", popular: false, features: ["Video Tutorial", "Modul PDF", "Akses Selamanya", "Grup Diskusi WA"] },
       { name: "Kelas Tutorial Lengkap", price: "Rp 450.000", popular: false, features: ["Dasar + Menengah + Lanjutan", "Video Full HD", "Akses Selamanya", "Sertifikat Digital"] },
@@ -817,7 +796,6 @@
       showNotification("Menghubungkan ke pendaftaran WhatsApp...", "success");
     }
 
-    // --- MOBILE SIDEBAR LOGIC ---
     function toggleMobileSidebar() {
       const sidebar = document.getElementById('dashboard-sidebar');
       const overlay = document.getElementById('mobile-overlay');
@@ -838,39 +816,15 @@
       }
     }
 
-    // --- MEMBERSHIP DATABASE (FREE & PRIVATE) ---
-    const accessDatabase = {
-      // --- TEST USERS ---
-      "FREE123": { name: "Budi (Uji Coba Free)", role: "free", owned: ["Dasar"] },
-      "PVT123": { name: "Andi (Uji Coba Private)", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
-
-      // --- LEGACY DATABASES MAPS TO CATEGORIES ---
-      "UUS2000": { name: "Uus", role: "free", owned: ["Dasar"] },
-      "JABIR2000": { name: "Jabir", role: "free", owned: ["Dasar"] },
-      "ROBEN2000": { name: "Roben", role: "free", owned: ["Dasar"] },
-      "ROKEK2000": { name: "Rokek", role: "free", owned: ["Dasar"] },
-      
-      "AMIRA22": { name: "Amira", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "ODANG21": { name: "Odang", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "OLAN22": { name: "Olan", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "DAHONG21": { name: "Dahong", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "AJUMA22": { name: "Ajuma", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "BOSUN21": { name: "Bosun", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "ADLAMA22": { name: "Adlama", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "NINING21": { name: "Nining", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] },
-      "ADMIN": { name: "Administrator", role: "private", owned: ["Dasar", "Menengah", "Lanjutan"] }
-    };
-
     const quotes = [
       { ko: "오늘 걷지 않으면 내일 뛰어야 한다.", id: '"Jika kamu tidak berjalan hari ini, kamu harus berlari besok."' },
       { ko: "실패는 성공의 어머니이다.", id: '"Kegagalan adalah ibu dari kesuksesan."' },
-      { ko: "멈추지 말고 계속 해나가기만 한다면 늦어도 상관없da.", id: '"Tidak masalah seberapa lambat kamu berjalan selama kamu tidak berhenti."' },
+      { ko: "멈추지 말고 계속 해나가기만 한다면 늦어도 상관없다.", id: '"Tidak masalah seberapa lambat kamu berjalan selama kamu tidak berhenti."' },
       { ko: "행복은 이미 완성된 것이 아니라, 당신의 행동으로부터 오는 것이다.", id: '"Kegagalan adalah pengingat untuk terus berjuang."' },
-      { ko: "별은 어둠이 없이는 빛na지 못해.", id: '"Bintang tidak bisa bersinar tanpa kegelapan."' }
+      { ko: "별은 어둠이 없이는 빛나지 못해.", id: '"Bintang tidak bisa bersinar tanpa kegelapan."' }
     ];
 
     const sampleVid = "https://drive.google.com/file/d/1KspUnWD-wzu4L9LiCMYf7--ksIvMPwl9/preview";
-    const samplePdf = "https://drive.google.com/file/d/159WS5daDSc1vpaFSYLwjIN9cU0Tp0Gap/view?usp=drive_link";
     
     const classData = {
       dasar: { title: "Kelas Dasar", icon: "fas fa-play-circle text-brand-500", items: [
@@ -1009,14 +963,12 @@
       ]}
     };
 
-    // --- LOGIC ---
     function getRandomQuote() {
       const selected = quotes[Math.floor(Math.random() * quotes.length)];
       document.getElementById('koreanQuote').innerText = selected.ko;
       document.getElementById('indoQuote').innerText = selected.id;
     }
 
-    // Update Avatar
     function updateAvatar(e) {
       const file = e.target.files[0];
       if (file) {
@@ -1031,49 +983,29 @@
       }
     }
 
-    // --- ENFORCE INTERACTION LOCKS ---
+    // =================================================================
+    // 2. SISTEM VERIFIKASI AKSES DAN HAK UTAMA MEMBER
+    // =================================================================
+
     function handleMenuAccess(menuKey, callback) {
       if (!currentUser) return;
       
-      // Allowed menus for FREE account
+      // Daftar menu yang SELALU diijinkan untuk tipe akun 'free'
       const allowedForFree = ['home', 'dasar', 'materi', 'pelengkap', 'konsultasi', 'upgrade', 'gtog', 'logout'];
       
       if (currentUser.role === 'private' || allowedForFree.includes(menuKey)) {
         callback();
       } else {
-        openUpgradeModal();
+        // Tampilkan notifikasi toast merah secara instan tanpa mengganggu visual sidebar
+        showNotification("Akses ditolak. Menu ini khusus Akun Private. Hubungi Admin untuk upgrade.", "error");
       }
     }
 
-    function openUpgradeModal() {
-      const modal = document.getElementById('upgradeModal');
-      const card = document.getElementById('upgradeModalCard');
-      
-      modal.classList.remove('hidden');
-      setTimeout(() => {
-        card.classList.remove('scale-95', 'opacity-0');
-        card.classList.add('scale-100', 'opacity-100');
-      }, 50);
-    }
-
-    function closeUpgradeModal() {
-      const modal = document.getElementById('upgradeModal');
-      const card = document.getElementById('upgradeModalCard');
-      
-      card.classList.remove('scale-100', 'opacity-100');
-      card.classList.add('scale-95', 'opacity-0');
-      setTimeout(() => {
-        modal.classList.add('hidden');
-      }, 300);
-    }
-
-    // Dynamic UI styling adjustments based on User Role (Free or Private)
     function applySidebarRoleStyle() {
       const isFree = currentUser && currentUser.role === 'free';
       const roleBadge = document.getElementById('displayUserRole');
       const freeBanner = document.getElementById('banner-upgrade-free');
 
-      // Update badge visual
       if (isFree) {
         roleBadge.innerText = 'FREE MEMBER';
         roleBadge.className = 'text-slate-400 text-[10px] font-extrabold uppercase tracking-widest bg-slate-800 px-2 py-0.5 rounded mt-1 inline-block border border-slate-700';
@@ -1084,20 +1016,15 @@
         if (freeBanner) freeBanner.classList.add('hidden');
       }
 
-      // Toggle lock indicators & opacities in Sidebar
+      // Redupkan visual item yang tidak bisa diakses akun Free secara transparan tanpa mengubah struktur
       const lockList = ['menengah', 'lanjutan', 'textbook', 'tryout', 'aplikasi', 'listening', 'soal'];
       lockList.forEach(key => {
         const btn = document.getElementById(`btn-${key}`);
         if (btn) {
-          const lockIndicator = btn.querySelector('.lock-indicator');
           if (isFree) {
-            // style as locked
-            if (lockIndicator) lockIndicator.classList.remove('hidden');
-            btn.classList.add('opacity-60');
+            btn.classList.add('opacity-50');
           } else {
-            // style as unlocked
-            if (lockIndicator) lockIndicator.classList.add('hidden');
-            btn.classList.remove('opacity-60');
+            btn.classList.remove('opacity-50');
           }
         }
       });
@@ -1105,10 +1032,20 @@
 
     function checkAccess() {
       const code = document.getElementById('accessCode').value.trim().toUpperCase();
-      const user = accessDatabase[code];
-      if (user) {
-        currentUser = user;
-        document.getElementById('displayUserName').innerText = user.name;
+      let role = null;
+      
+      // Cek kategori role ID
+      if (PRIVATE_KEYS.includes(code)) {
+        role = 'private';
+      } else if (FREE_KEYS.includes(code)) {
+        role = 'free';
+      }
+
+      if (role) {
+        const name = USER_NAMES[code] || "Siswa Gumi";
+        currentUser = { code: code, name: name, role: role };
+        
+        document.getElementById('displayUserName').innerText = name;
         const savedAvatar = localStorage.getItem('gumi_avatar_v2');
         if (savedAvatar) document.getElementById('userAvatar').src = savedAvatar;
         
@@ -1116,11 +1053,11 @@
         navigateTo('view-dashboard');
         applySidebarRoleStyle();
         showDashboard();
-        showNotification(`Selamat datang kembali, ${user.name}!`, "success");
+        showNotification(`Selamat datang kembali, ${name}!`, "success");
       } else {
         const input = document.getElementById('accessCode');
         input.classList.add('border-rose-500', 'ring-rose-500');
-        showNotification("Kode akses tidak valid. Silakan coba FREE123 atau PVT123.", "error");
+        showNotification("Kode akses tidak valid. Hubungi Admin.", "error");
         setTimeout(() => input.classList.remove('border-rose-500', 'ring-rose-500'), 1000);
       }
     }
@@ -1130,17 +1067,15 @@
       window.open(`https://wa.me/628385551800?text=${encodeURIComponent(msg)}`, '_blank');
     }
 
-    // --- SECTION RENDERING ---
     function showClassSection(type) {
       closeSidebarOnMobile();
       resetView();
       currentCategory = type;
       const data = classData[type];
       
-      // Security enforcement (if they manipulate JS execution)
       const allowedForFree = ['dasar'];
       if (currentUser.role === 'free' && !allowedForFree.includes(type)) {
-        openUpgradeModal();
+        showNotification("Akses materi terkunci. Menu ini khusus Akun Private.", "error");
         return;
       }
 
@@ -1172,10 +1107,9 @@
       currentCategory = type;
       const data = moduleData[type];
 
-      // Security enforcement (if they manipulate JS execution)
       const allowedForFree = ['materi', 'pelengkap'];
       if (currentUser.role === 'free' && !allowedForFree.includes(type)) {
-        openUpgradeModal();
+        showNotification("Akses materi terkunci. Modul ini khusus Akun Private.", "error");
         return;
       }
       
@@ -1335,7 +1269,6 @@
       showNotification("Berhasil keluar dari akun.", "info");
     }
 
-    // --- TESTIMONIAL SLIDER LOGIC ---
     let currentTestiSlide = 0;
     const totalTestiSlides = 3;
     let testiInterval;
@@ -1380,7 +1313,6 @@
       testiInterval = setInterval(nextTesti, 5000);
     }
 
-    // Init Page
     window.onload = () => {
       renderPackages();
       getRandomQuote();
